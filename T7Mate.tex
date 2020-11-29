@@ -34,30 +34,33 @@
 
 La longitud de una circunferencia(perimetro) es  igual a $\pi$ * diametro. El perimetro de la llanta es igual a $1 * \pi$ que es $\pi$ m\\
 
-\textbf{Fórmula de longitud de arco, con el ángulo en grados:}
-Como una circunferencia es un arco con ángulo $360 ^{\circ}$, la longitud de un arco con ángulo $\alpha ^{\circ}$ en grados es
-\begin{align*}
-	L_{\alpha ^{\circ}}=  \frac{2 * \pi * r *  \alpha^{\circ}}{360^{ \circ}}
-\end{align*}
-
 \textbf{Fórmula de longitud de arco, con el ángulo en radianes:}
 Si escribimos el ángulo $\alpha$ en radianes, la fórmula es
 \begin{align*}
-	L_{\alpha ^{\circ}}= \pi * \alpha^{\circ}
+	L_{\alpha ^{\circ}}= r * \alpha^{\circ}
+\end{align*}
+
+En radianes:
+El perimetro de la llanta es $ \pi $, la longitud de la del arco es $30$ y el radio de la llanta es $ 500 $
+\begin{align*}
+	L_{\alpha ^{\circ}} = 500 * \alpha^{\circ}\\
+	30 = 500 * \alpha^{\circ}\\
+	30/500 = \alpha^{\circ}\\
+	\frac{3}{500} = \alpha^{\circ}\\
+	\alpha^{\circ}  = \frac{3}{50} \pi \text{ rad}\\
+	\alpha^{\circ}  = 0.06 \pi \text{ rad}
 \end{align*}
 
 
-En grados  
+En grados
 
 \begin{align*}
-	L_{\alpha ^{\circ}}=  \frac{2 * \pi * r *  \alpha^{\circ}}{360^{ \circ}} \\
-	30 cm =  \frac{2 * \pi * 0.5 *  \alpha^{\circ}}{360^{ \circ}}\\
-	360 * 30 = 2 * \pi * 0.5 *  \alpha^{\circ}\\
-	10800 = \pi * \alpha^{\circ}
+	\alpha^{\circ} = \frac{3\pi}{50} * \frac{180}{\pi}\\
+	\alpha^{\circ} = 3* \frac{180}{50}\\
+	\alpha^{\circ} = 3*3.6\\
+	\alpha^{\circ} = 10.8\\
+	\alpha^{\circ} = 10^{\circ} 48'
 \end{align*}
-
-
-
 
 \textbf{Trace las gráficas de las funciones trigonométricas dadas, ¿Cuál es el periodo de cada función?}\\
 \textbf{19} $\cos (x - \frac{\pi}{2})$
@@ -83,7 +86,7 @@ Esto se debe a que al analizar la función en el círculo unitario $\cos (x) = \
 
 Recordando que podemos trasladar una función horizontalmente de está manera $y = f(x+h)$, si $h < 0$ el desplazamiento de la función se dará a la derecha $h$ unidades, también sabemos que podemos desplazar la gráfica hacia arriba sumandole una constante $k$. Así que $\sen (x - \frac{\pi}{4}) + 1$ es la función $\sen (x)$ desplazada $\frac{\pi}{4}$ unidades  a la derecha y una unidad hacia arriba. Por lo que $\sen (x - \frac{\pi}{4}) + 1$ tiene el mismo periodo $\sen (x)$
 
-Podemos observar en la gráfica de la función $\sen$ que cuando $x = 0, y = 0$, cuando $x=\pi, y= 0$, y cuando $x = 2\pi, y= 0$, y esté patron se repite, los multiplos pares de $\pi$ valen 0 como cuando $x = 0$ por lo que se dice que la función $\cos (x)$ tiene un periodo de $2\pi$\\
+Podemos observar en la gráfica de la función $\sen$ que cuando $x = 0, y = 0$, cuando $x=\pi, y= 0$, y cuando $x = 2\pi, y= 0$, y esté patron se repite, los multiplos pares de $\pi$ valen 0 como cuando $x = 0$ por lo que se dice que la función $\sen (x)$ tiene un periodo de $2\pi$\\
 
 \begin{figure}[ht]
 \centering
@@ -91,12 +94,13 @@ Podemos observar en la gráfica de la función $\sen$ que cuando $x = 0, y = 0$,
 \end{figure}
 
 
-Esto se debe a que al analizar la función en el círculo unitario $\cos (x) = \frac{CatetoAdyacente}{Hipotenusa} = \cos(x) = \pi$, ya que  $hipotenusa=1$, al recorrer el ciírculo modificando el valor del angulo $x$ tenemos que: cuando $x = 0, y=1$ porque el radio es 1,  cuando $x = \pi / 2, y = 0$ ,  cuando $x = \pi, y = -1$ debido a que $x$ se desplazo en sentido contrario a las manecillas del reloj, es decir, $x$ es un ángulo negativo; despues cuando $x=2\pi$ de nuevo $y=1$ y comienza otra vez el recorrido por el círculo.
+Esto se debe a que al analizar la función en el círculo unitario $\sen (x) = \frac{CatetoOpuesto}{Hipotenusa} =$ $\sen(x) =$ CatetoOpuesto, ya que  $hipotenusa=1$,  al recorrer el ciírculo modificando el valor del angulo $x$ tenemos que: cuando $x = 0$, $y=0$,  cuando $x = \frac{1}{2 \pi}$ , $y = 1$ ,  cuando $x = \pi, y = 0$; despues cuando $x=2\pi$ de nuevo $y=0$, con lo que comienza otra vez el recorrido por el círculo.
 \begin{figure}[ht]
 \centering
 \includegraphics[width=30em]{t7cinco}
 \end{figure}
 
+ \newpage
 \textbf{51. La fórmula de la tangente de una suma.} La forma estándar para la tangente de la suma de dos ángulos es
 
 \begin{align*}
@@ -104,13 +108,22 @@ Esto se debe a que al analizar la función en el círculo unitario $\cos (x) = \
 \end{align*}
 Aplicando las identidades de senos y cosenos encuentre esta identidad trigonométrica para la tangente.
 
+\textcolor{blue}{
+\begin{align*}
+	\tan(A+B) = \frac{\sen(A+B)}{\cos(A+B)} = \frac{\sen(A) * \cos (B) + \sen(B) * \cos (A) }{\cos(A) * \cos (B) - \sen(A)*\sen(B)} =\\
+	\frac{\frac{\sen (A)*\cos(B)+\sen(B)*\cos(A)}{\cos(A)*\cos(B)}}{\frac{\cos(A)*\cos(B)-\sen(A)*\sen(B)}{\cos(A)*\cos(B)}} =\\
+	\frac{\frac{\sen(A)}{\cos(A)} + \frac{\sen(B)}{\cos(B)}}{1-\frac{\sen(A)}{\cos(A)}*\frac{\sen(B)}{\cos(B)}} =\\
+	\frac{\tan A + \tan B}{1 - \tan A \tan B}
+\end{align*}
+} 
+
 \textbf{57. La ley de los senos} afirma que si $a, b$ y $c$ son los lados opuestos a los ángulos $A, B$ y $C$ en un triángulo, entonces
 
 \begin{align*}
  	\frac{\sen A}{a} =  \frac{\sen B}{b} = \frac{\sen C}{c}
 \end{align*}
 
-Use las siguientes figuras y, si lo requiere, la identidad $sen(\pi - \theta = \sen \theta$, para obtener la ley de senos.
+Use las siguientes figuras y, si lo requiere, la identidad $sen(\pi - \theta) = \sen \theta$, para obtener la ley de senos.
 
 \begin{figure}[ht]
 \centering
@@ -118,4 +131,18 @@ Use las siguientes figuras y, si lo requiere, la identidad $sen(\pi - \theta = \
 \end{figure}
 
 
+Utilizando el triángulo de la izquierda, obtengo:
+\begin{align*}
+ 	\sen B = \frac{h}{c} \rightarrow c * \sen B = h \\
+	\sen C =\frac{h}{b} \rightarrow b * \sen C = h\\
+	b * \sen C =  c * \sen B\\
+	\frac{\sen C}{c} = \frac{\sen (B)}{b}
+\end{align*}
+
+Utilizando el triángulo de la derecha, obtengo:
+\begin{align*}
+	\sen B =\frac{h}{c} \rightarrow  c* \sen B = h\\
+	\sen (\pi - C) =  \frac{h}{a} \rightarrow a  * \sen C=h\\
+	\frac{\sen C}{c} = \frac{\sen (B)}{b}
+\end{align*}
 \end{document} 
